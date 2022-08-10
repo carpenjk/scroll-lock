@@ -1,7 +1,7 @@
 {
   "name": "@carpenjk/scroll-lock",
   "version": "1.0.0",
-  "description": "This a description",
+  "description": "A react component to lock the scrollbar of body",
   "main": "lib/index.js",
   "scripts": {
     "prebuild": "rimraf lib",
@@ -39,10 +39,10 @@
     "rimraf": "^3.0.2"
   },
   "peerDependencies": {
+    "@carpenjk/hooks": "github:carpenjk/hooks",
+    "body-scroll-lock": "^3.1.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "@carpenjk/hooks": "git+https://git@github.com/carpenjk/hooks.git",
-    "body-scroll-lock": "^3.1.5",
     "styled-components": "^5.1.1"
   },
   "publishConfig": {
