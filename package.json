@@ -48,7 +48,7 @@
     "styled-components": "^5.1.1"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "config": {
     "commitizen": {
