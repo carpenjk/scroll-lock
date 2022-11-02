@@ -2,14 +2,14 @@ import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 import { useIsoLayoutEffect } from '@carpenjk/hooks'
 
 const ScrollLock = ({ scrollNode, reserveScrollBarGap }) => {
-  const options = {
+  const option = {
     reserveScrollBarGap
   }
   function clear () {
     clearAllBodyScrollLocks()
   }
   useIsoLayoutEffect(() => {
-    disableBodyScroll(scrollNode, options)
+    disableBodyScroll(scrollNode, option)
     return clear
   }, [])
   return null
